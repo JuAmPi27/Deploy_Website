@@ -77,6 +77,11 @@
     }
 
 /* TEXT */
+.text-paragraph {
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
 .text-center {
     text-align: center;
 }
@@ -100,6 +105,28 @@
 .xl {
     font-size: 3.5rem;
 }
+
+/* ALERT */
+.alert {
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    margin: 15px 0;
+}
+
+.alert i {
+    margin-right: 10px;
+}
+
+.alert-success {
+    background-color: var(--success-color);
+    color: #fff;
+}
+
+.alert-error {
+    background-color: var(--error-color);
+    color: #fff;
+}
+
 
 /* FLEX */
 .flex {

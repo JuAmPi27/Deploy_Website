@@ -6,6 +6,8 @@
     --secondary-color: #05BFDB;
     --light-color: #00FFCA;
     --dark-color: #0A4D68;
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
 }
 
 * {
@@ -43,6 +45,12 @@ img {
     width: 100%;
 }
 
+code, pre {
+    background-color: #333;
+    color: #fff;
+    padding: 3px;
+}
+
 /* NAVBAR */
 .navbar {
     background-color: var(--dark-color);
@@ -70,7 +78,7 @@ img {
 
 .navbar .container h1 {
     font-family: 'Fredericka the Great', sans-serif;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
 
 }
 
@@ -211,7 +219,8 @@ img {
 }
 
 /* FEATURES PAGE */
-.features-head img {
+.features-head img,
+.docs-head img {
     width: 200px;
     justify-self: flex-end;
 }
@@ -219,12 +228,6 @@ img {
 .features-sub-head img {
     width: 300px;
     justify-self: center;
-}
-
-.features-head .container p,
-.features-sub-head .container p,
-span#rocket {
-    font-style: italic;
 }
 
 .features-main .card > i {
@@ -246,10 +249,32 @@ span#rocket {
 
 span#rocket {
     font-family: 'Fredericka the Great', sans-serif;
+    font-style: italic;
     color: #fff;
     letter-spacing: 2px;
 }
 
+/* DOCS PAGE */
+.docs-main h3 {
+    margin: 20px 0;
+}
+
+.docs-main .grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+}
+
+.docs-main nav li {
+    font-size: 17px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px #000 solid;
+    list-style-type: disc;
+}
+
+.docs-main a:hover {
+    font-weight: bold;
+}
 
 /* FOOTER */
 .footer .social a {
