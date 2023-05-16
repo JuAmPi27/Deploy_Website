@@ -37,10 +37,55 @@
     transform: scale(.95);
 }
 
+/* BACKGROUNDS AND COLORED BUTTONS */
+    .bg-primary, 
+    .btn-primary {
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+
+    .bg-secondary, 
+    .btn-secondary {
+        background-color: var(--secondary-color);
+        color: #fff;
+    }
+
+    .bg-dark, 
+    .btn-dark {
+        background-color: var(--dark-color);
+        color: #fff;
+    }
+
+    .bg-light, 
+    .btn-light {
+        background-color: var(--light-color);
+        color: #333;
+    }
+
+    .btn-dark {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        border: 1px #fff solid ;
+    }
+
 /* TEXT */
 .text-center {
     text-align: center;
+}
 
+.lead {
+    font-size: 20px;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
 }
 
 /* FLEX */
