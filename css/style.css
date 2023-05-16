@@ -45,7 +45,7 @@ img {
 
 /* NAVBAR */
 .navbar {
-    background-color: var(--primary-color);
+    background-color: var(--dark-color);
     color: #fff;
     height: 70px;
 }
@@ -210,3 +210,102 @@ img {
     transform: translateY(-15px);
 }
 
+/* FEATURES PAGE */
+.features-head img {
+    width: 200px;
+    justify-self: flex-end;
+}
+
+.features-sub-head img {
+    width: 300px;
+    justify-self: center;
+}
+
+.features-head .container p,
+.features-sub-head .container p,
+span#rocket {
+    font-style: italic;
+}
+
+.features-main .card > i {
+    margin-right: 20px;
+}
+
+.features-main .grid {
+    padding: 30px;
+}
+
+.features-main .grid > *:first-child { /* agarra la primer card y la expande para que ocupe las 3 columnas */
+    grid-column: 1 / span 3;
+}
+
+.features-main .grid > *:nth-child(2) { /* agarra la segunda card y la expande para que ocupe 2 columnas */
+    grid-column: 1 / span 2;
+}
+
+
+span#rocket {
+    font-family: 'Fredericka the Great', sans-serif;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+
+/* FOOTER */
+.footer .social a {
+    margin: 0 10px;
+}
+
+.footer .container h1 {
+    font-family: 'Fredericka the Great', sans-serif;
+}
+
+
+/* --- MEDIA QUERIES --- */
+/* TABLETS AND UNDER */
+@media(max-width: 768px) { 
+   .grid,
+   .showcase .grid,
+   .stats .grid,
+   .cli .grid,
+   .cloud .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+   }
+
+   .showcase {
+    height: auto;
+   }
+
+   .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+   }
+
+   .showcase-form {
+    justify-self: center;
+    margin: auto;
+   }
+
+   .cli .grid img {
+        grid-column: 1; 
+        grid-row: 1;
+    }
+}
+
+
+/* MOBILE */
+@media(max-width: 500px) {
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
